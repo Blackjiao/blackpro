@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询结果</title>
+</head>
+<body>
+   <h2>查询结果</h2>
+
+   {% for line in c %}
+   <ul>
+        <li>姓名：{{ line.Name }}</li>
+        <li>学号：{{ line.Number }}</li>
+        <li>年龄：{{ line.Age }}</li>
+        <li>籍贯：{{ line.Origin }}</li>
+        <li>专业：{{ line.Learn }}</li>
+        <li>所属班级：{{ line.Class }}</li>
+        <a href="http://127.0.0.1:8000/app1/url_hello">返回</a>
+    </ul>
+    {% endfor %}
+
+</body>
+</html>
